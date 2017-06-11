@@ -1,7 +1,7 @@
 {
     "version": "1.0.0",
     "summary": "Marc Coquand Portfolio",
-    "repository": "https://github.com/MarcCoquand/Portfolio",
+    "repository": "https://github.com/marccoquand/portfolio.git",
     "license": "MIT",
     "source-directories": [
         "src/elm"

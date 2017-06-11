@@ -5,7 +5,7 @@ import Html exposing (..)
 
 
 image : String
-image = "static/img/papahana.png"
+image = "./src/static/img/papahana.png"
 
 text : Html Msg
 text = Markdown.toHtml [] ("""
