@@ -11,7 +11,7 @@ import DynamicStyle exposing (..)
 
 displayImage : Project -> Html Msg
 displayImage p =
-  div [] [(img [style [Style.width "15rem", Style.height "auto"], src
+  div [] [(img [style projImg, src
   p.imgPath] [])]
 
 displayText : Project -> Html Msg
@@ -53,21 +53,22 @@ view model d p =
 textButtonContainer : List Style
 textButtonContainer =
   [ display "flex" 
-  , margin "5rem"
-  , maxWidth "25rem"
+  , maxWidth "30rem"
   , textAlign "left"
   , flexDirection "column"
-  , alignItems "flex-start"
   , fontSize "0.8rem"
+  , alignSelf "stretch"
   ]
 
 blockContainer : List Style
 blockContainer = 
-  [ marginBottom "6rem"
-  , flexDirection "row"
+  [ flexDirection "row"
   , justifyContent "center"
   , margin "0"
+  , marginBottom "4rem"
   , display "flex"
+  , alignItems "flex-start"
+
   ]
 
 textStyle : List Style
@@ -77,8 +78,10 @@ textStyle =
 
 projImg : List Style
 projImg = 
-  [ Style.width "25rem"
-  , Style.height "25rem"
+  [ Style.width "15rem"
+  , Style.height "auto"
+  , marginRight "5rem"
+  , marginLeft "5rem"
   ]
 
 buttonStyle : List Style

@@ -1,12 +1,12 @@
 {
-  "name": "elm-webpack-starter",
-  "description": "Webpack setup for writing Elm apps",
+  "name": "Marc Coquand Portfolio",
+  "description": "Marc Coquand's portfolio written in Elm",
   "version": "0.8.4",
   "license": "MIT",
-  "author": "Peter Morawiec",
+  "author": "Marc Coquand",
   "repository": {
     "type": "git",
-    "url": "https://github.com/moarwick/elm-webpack-starter"
+    "url": "https://github.com/MarcCoquand/Portfolio"
   },
   "scripts": {
     "start": "webpack-dev-server --hot --inline",

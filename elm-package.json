@@ -1,7 +1,7 @@
 {
     "version": "1.0.0",
-    "summary": "Example using `elm-webpack-loader`.",
-    "repository": "https://github.com/moarwick/elm-webpack-starter.git",
+    "summary": "Marc Coquand Portfolio",
+    "repository": "https://github.com/MarcCoquand/Portfolio",
     "license": "MIT",
     "source-directories": [
         "src/elm"

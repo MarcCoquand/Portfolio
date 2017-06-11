@@ -30,7 +30,7 @@ headerText =
   , fontFamily "Assistant"
   , minWidth "25rem"
   , maxWidth "35rem"
-  , marginBottom "8rem"
+  , marginBottom "5rem"
   , fontSize "0.8rem"
   ]
 
@@ -41,7 +41,7 @@ profileImage =
   , display "flex"
   , justifyContent "center"
   , margin auto
-  , marginTop "3rem"
+  , marginTop "1rem"
   , borderRadius "50%"
   , textAlign center
   ]
