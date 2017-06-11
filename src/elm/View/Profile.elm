@@ -8,7 +8,7 @@ import Html.Attributes exposing (..)
 view : Model -> Html Msg
 view model =
   div [style headerText] 
-    [ img [src "./src/static/img/profile.png", style profileImage] []
+    [ img [src "static/img/profile.png", style profileImage] []
     , h1 [] [text "Hi, my name is Marc"]
     , text """I strive to make everything beautiful and valuable. I achieve this
     through focusing on the user's needs. I have a strong interest in UX,
