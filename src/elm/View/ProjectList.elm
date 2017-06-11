@@ -39,9 +39,9 @@ view model = (renderProjects model
 -- CSS
 container : List Style
 container = 
-  [ textAlign center
-  , display block
+  [ display "flex"
+  , flexDirection "column"
+  , justifyContent "center"
   , margin auto
   , marginTop "3rem"
-  , Style.width "70rem"
   ]

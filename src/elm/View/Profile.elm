@@ -22,20 +22,25 @@ view model =
 headerText : List Style
 headerText = 
   [ textAlign center
-  , display block
+  , display "flex"
+  , justifyContent "center"
+  , flexDirection "column"
   , margin auto
   , marginTop "2rem"
   , fontFamily "Assistant"
-  , Style.width "40rem"
+  , minWidth "25rem"
+  , maxWidth "35rem"
   , marginBottom "8rem"
+  , fontSize "0.8rem"
   ]
 
 profileImage : List Style
 profileImage =
-  [ margin auto
-  , display block
-  , Style.height "15rem"
+  [ Style.height "15rem"
   , Style.width "15rem"
+  , display "flex"
+  , justifyContent "center"
+  , margin auto
   , marginTop "3rem"
   , borderRadius "50%"
   , textAlign center
