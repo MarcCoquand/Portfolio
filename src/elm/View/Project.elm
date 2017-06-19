@@ -8,11 +8,20 @@ import Html.Events exposing (..)
 import Model.Model as Model exposing (..)
 import Animation exposing (render)
 import DynamicStyle exposing (..)
+import Utils.Functions exposing (dropWhile)
 
 displayImage : Project -> Html Msg
 displayImage p =
   div [] [(img [style projImg, src
   p.imgPath] [])]
+
+displayVideo : Project -> Html Msg
+displayVideo v =
+  div [] [(video [autoplay true, style projImg, src
+  v.imgPath] [])]
+
+checkFormat :: String -> Bool
+checkFormat f = 
 
 displayText : Project -> Html Msg
 displayText p =
