@@ -1,7 +1,5 @@
 <!DOCTYPE HTML>
-<html><head><meta name="viewport" content="width=device-width,
-    initial-scale=1,user-scalable=no" charset="UTF-8"><title>Main</title><style>@import
-url('https://fonts.googleapis.com/css?family=Montserrat:200|Quicksand:300');html,head,body { padding:0; margin:0; }
+<html><head><meta charset="UTF-8"><title>Main</title><style>html,head,body { padding:0; margin:0; }
 body { font-family: calibri, helvetica, arial, sans-serif; }</style><script type="text/javascript">
 (function() {
 'use strict';
@@ -15705,6 +15703,12 @@ var _marccoquand$portfolio$View_Project$displayText = function (p) {
 var _marccoquand$portfolio$View_Project$isVideo = function (f) {
 	return A2(_elm_lang$core$String$endsWith, 'mp4', f) ? true : false;
 };
+var _marccoquand$portfolio$View_Project$muted = function (b) {
+	return A2(
+		_elm_lang$html$Html_Attributes$property,
+		'muted',
+		_elm_lang$core$Json_Encode$bool(b));
+};
 var _marccoquand$portfolio$View_Project$displayVideo = function (v) {
 	return A2(
 		_elm_lang$html$Html$div,
@@ -15725,7 +15729,11 @@ var _marccoquand$portfolio$View_Project$displayVideo = function (v) {
 							_1: {
 								ctor: '::',
 								_0: _elm_lang$html$Html_Attributes$src(v.imgPath),
-								_1: {ctor: '[]'}
+								_1: {
+									ctor: '::',
+									_0: _marccoquand$portfolio$View_Project$muted(true),
+									_1: {ctor: '[]'}
+								}
 							}
 						}
 					}

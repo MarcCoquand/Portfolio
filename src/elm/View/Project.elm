@@ -9,16 +9,21 @@ import Model.Model as Model exposing (..)
 import Animation exposing (render)
 import DynamicStyle exposing (..)
 import Utils.Functions exposing (dropWhile)
+import Json.Encode as Encode
 
 displayImage : Project -> Html Msg
 displayImage p =
   div [] [(img [style projImg, src
   p.imgPath] [])]
 
+muted : Bool -> Attribute msg
+muted b =
+  property "muted" (Encode.bool b)
+
 displayVideo : Project -> Html Msg
 displayVideo v =
   div [] [(video [autoplay True, style projImg, type_ "video/mp4", src
-  v.imgPath] [])]
+  v.imgPath, muted True] [])]
 
 isVideo : String -> Bool
 isVideo f = 
