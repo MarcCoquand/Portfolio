@@ -28,7 +28,7 @@ headerText =
   , margin auto
   , marginTop "2rem"
   , fontFamily "Assistant"
-  , minWidth "25rem"
+  , minWidth "20rem"
   , maxWidth "35rem"
   , marginBottom "5rem"
   , fontSize "0.8rem"
