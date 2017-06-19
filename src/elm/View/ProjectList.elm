@@ -33,7 +33,7 @@ view model = (renderProjects model
   , {imgPath = Courses.image, text = Courses.text,
       buttonLink = "https://github.com/Isakdl/IDportal", buttonText = "View on Github"}
   , {imgPath = Smartcity.image, text = Smartcity.text,
-      buttonLink = "", buttonText = "View more"}
+      buttonLink = "", buttonText = ""}
   ])
 
 -- CSS

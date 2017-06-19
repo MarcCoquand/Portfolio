@@ -1,0 +1,9 @@
+$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/_mixins.scss';
+@import '~bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+@import url('https://fonts.googleapis.com/css?family=Assistant:300');
+
+// can add Boostrap overrides, additional Sass/CSS below...
+
+html { font-size: 16px; }
+body { font-size: 62.5%; }
