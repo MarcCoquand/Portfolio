@@ -22,8 +22,8 @@ muted b =
 
 displayVideo : Project -> Html Msg
 displayVideo v =
-  div [] [(video [autoplay True, style projImg, type_ "video/mp4", src
-  v.imgPath, muted True] [])]
+  div [] [(video [autoplay True, muted True, style projImg, type_ "video/mp4", src
+  v.imgPath] [])]
 
 isVideo : String -> Bool
 isVideo f = 
