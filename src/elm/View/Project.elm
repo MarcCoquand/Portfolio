@@ -18,7 +18,7 @@ displayImage p =
 
 muted : Bool -> Attribute msg
 muted b =
-  property "muted" (Encode.bool b)
+  Html.Attributes.property "muted" (Encode.bool b)
 
 displayVideo : Project -> Html Msg
 displayVideo v =
@@ -48,9 +48,9 @@ displayText p =
       ] 
       ++
       hover
-        [ ("border-bottom-width", "0px", "2px")
-        , ("border-bottom-color", "black", "red")
-        , ("border-bottom-style", "none", "solid")
+        [ ("border-bottom-width", "2px", "2px")
+        , ("border-bottom-color", "transparent", "red")
+        , ("border-bottom-style", "solid", "solid")
         , ("box-sizing", "border-box", "border-box")
         , ("cursor", "", "pointer")
         , ("user-select", "none", "none")
