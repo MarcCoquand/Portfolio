@@ -13,19 +13,19 @@ import Text.Courses as Courses exposing (..)
 import Model.Model as Model exposing (..)
 import List exposing (..)
 
-renderProject : Model -> Int -> Project -> Html Msg
-renderProject model i p =
+renderProject : Int -> Project -> Html Msg
+renderProject i p =
   if i % 2 == 0 then
-    Project.view model Left p
+    Project.view Left p
   else
-    Project.view model Right p
+    Project.view Right p
 
-renderProjects : Model -> List Project -> Html Msg
-renderProjects model p =
-  div [style container] (indexedMap (renderProject model) p)
+renderProjects : List Project -> Html Msg
+renderProjects p =
+  div [style container] (indexedMap renderProject p)
 
-view : Model -> Html Msg
-view model = (renderProjects model 
+view : Html Msg
+view = (renderProjects 
   [ {imgPath = Freshcoast.image, text = Freshcoast.text,
       buttonLink = "https://github.com/f95johansson/IceCreamBoats", buttonText = "View on Github"}
   , {imgPath = Papahana.image, text = Papahana.text,

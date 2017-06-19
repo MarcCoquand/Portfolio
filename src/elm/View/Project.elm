@@ -55,8 +55,8 @@ displayText p =
   ]
 
 
-view : Model -> Direction -> Project -> Html Msg
-view model d p =  
+view : Direction -> Project -> Html Msg
+view d p =  
   case d of 
     Right ->
       div [style ([flexWrap "wrap"] ++ blockContainer)] [displayMedia p, displayText p]
@@ -73,7 +73,7 @@ textButtonContainer =
   , maxWidth "30rem"
   , textAlign "left"
   , flexDirection "column"
-  , fontSize "0.8rem"
+  , fontSize "0.9rem"
   , alignSelf "stretch"
   ]
 
@@ -81,6 +81,8 @@ blockContainer : List Style
 blockContainer = 
   [ flexDirection "row"
   , justifyContent "center"
+  , paddingLeft "1rem"
+  , paddingRight "1rem"
   , margin "0"
   , marginBottom "4rem"
   , display "flex"
@@ -90,7 +92,8 @@ blockContainer =
 
 textStyle : List Style
 textStyle =
-  [ fontFamily "Assistant"
+  [ fontFamily "Montserrat"
+  , lineHeight "150%"
   ]
 
 projImg : List Style
@@ -107,8 +110,8 @@ buttonStyle =
   , ("box-sizing", "border-box")
   , border "none"
   , fontWeight "bold"
-  , fontFamily "Assistant"
-  , Style.width "5.5rem"
+  , fontFamily "Montserrat"
+  , Style.width "7.0rem"
   , color "black"
   , textDecoration "none"
   ]

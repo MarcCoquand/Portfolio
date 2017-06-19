@@ -9,7 +9,7 @@ image = "./src/static/img/smartcity.png"
 
 text : Html Msg
 text = Markdown.toHtml [] ("""
-### Norrsken - Safe smart city
+### NORRSKEN - SAFE SMART CITY
 
 As part of a course in Interactivity in Smart Environments we looked at how the
 future cities could become safer with the use of technology. This resulted in a

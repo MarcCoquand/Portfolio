@@ -9,7 +9,7 @@ image = "./src/static/img/icecreamboats.png"
 
 text : Html Msg
 text = Markdown.toHtml [] ("""
-### Glassbåtarna
+### GLASSBÅTARNA
 
 Glassbåtarna (in english: Icecream boats) was an app by a team for
 the company Freshcoast. Freshcoast is a company located in Gothenburg that sells

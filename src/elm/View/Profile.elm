@@ -3,13 +3,14 @@ module View.Profile exposing (view)
 import Model.Model exposing (..)
 import Style exposing (..)
 import Html exposing (..)
+import Color exposing (..)
 import Html.Attributes exposing (..)
 
 view : Model -> Html Msg
 view model =
   div [style headerText] 
     [ img [src "./src/static/img/profile.png", style profileImage] []
-    , h1 [] [text "Hi, my name is Marc"]
+    , h1 [style titleText] [text "Hi, my name is Marc"]
     , text """I strive to make everything beautiful and valuable. I achieve this
     through focusing on the user's needs. I have a strong interest in UX,
     ethnography, programming and service design. Welcome to my portfolio,
@@ -18,6 +19,13 @@ view model =
 
 
 -- CSS STYLES
+titleText : List Style
+titleText = 
+  [ 
+    fontFamily "Quicksand"
+  , fontWeight "normal"
+  ]
+
 
 headerText : List Style
 headerText = 
@@ -27,11 +35,14 @@ headerText =
   , flexDirection "column"
   , margin auto
   , marginTop "2rem"
-  , fontFamily "Assistant"
+  , fontFamily "Montserrat"
   , minWidth "20rem"
   , maxWidth "35rem"
   , marginBottom "5rem"
-  , fontSize "0.8rem"
+  , paddingLeft "1rem"
+  , paddingRight "1rem"
+  , fontSize "0.9rem"
+  , lineHeight "190%"
   ]
 
 profileImage : List Style

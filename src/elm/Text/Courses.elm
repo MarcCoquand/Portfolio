@@ -9,7 +9,7 @@ image = "./src/static/img/umu.png"
 
 text : Html Msg
 text = Markdown.toHtml [] ("""
-### ID Portalen Course Rating System
+### ID PORTALEN 
 
 At the Interaction and design programme there's a lot of courses to choose from.
 ID portalen is a system developed in Meteor (React, MongoDB, Node.js) that

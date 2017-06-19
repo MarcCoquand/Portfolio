@@ -9,7 +9,7 @@ image = "./src/static/video/papahana.mp4"
 
 text : Html Msg
 text = Markdown.toHtml [] ("""
-### Papahana
+### PAPAHANA
 
 In today's world it is difficult to meet new people. Papahana is a proof of
 concept social media that focuses on creating smaller events so that you can

@@ -1,7 +1,6 @@
 <!DOCTYPE HTML>
-<html><head><meta name="viewport" content="width=device-width,
-    initial-scale=1,user-scalable=no" charset="UTF-8"><title>Main</title><style>@import
-url('https://fonts.googleapis.com/css?family=Assistant');html,head,body { padding:0; margin:0; }
+<html><head><meta charset="UTF-8"><title>Main</title><style>@import
+url('https://fonts.googleapis.com/css?family=Montserrat:200|Quicksand:300');html,head,body { padding:0; margin:0; }
 body { font-family: calibri, helvetica, arial, sans-serif; }</style><script type="text/javascript">
 (function() {
 'use strict';
@@ -15399,7 +15398,7 @@ var _marccoquand$portfolio$View_Profile$headerText = {
 						_0: _seanhess$elm_style$Style$marginTop('2rem'),
 						_1: {
 							ctor: '::',
-							_0: _seanhess$elm_style$Style$fontFamily('Assistant'),
+							_0: _seanhess$elm_style$Style$fontFamily('Montserrat'),
 							_1: {
 								ctor: '::',
 								_0: _seanhess$elm_style$Style$minWidth('20rem'),
@@ -15411,8 +15410,20 @@ var _marccoquand$portfolio$View_Profile$headerText = {
 										_0: _seanhess$elm_style$Style$marginBottom('5rem'),
 										_1: {
 											ctor: '::',
-											_0: _seanhess$elm_style$Style$fontSize('0.8rem'),
-											_1: {ctor: '[]'}
+											_0: _seanhess$elm_style$Style$paddingLeft('1rem'),
+											_1: {
+												ctor: '::',
+												_0: _seanhess$elm_style$Style$paddingRight('1rem'),
+												_1: {
+													ctor: '::',
+													_0: _seanhess$elm_style$Style$fontSize('0.9rem'),
+													_1: {
+														ctor: '::',
+														_0: _seanhess$elm_style$Style$lineHeight('190%'),
+														_1: {ctor: '[]'}
+													}
+												}
+											}
 										}
 									}
 								}
@@ -15422,6 +15433,15 @@ var _marccoquand$portfolio$View_Profile$headerText = {
 				}
 			}
 		}
+	}
+};
+var _marccoquand$portfolio$View_Profile$titleText = {
+	ctor: '::',
+	_0: _seanhess$elm_style$Style$fontFamily('Quicksand'),
+	_1: {
+		ctor: '::',
+		_0: _seanhess$elm_style$Style$fontWeight('normal'),
+		_1: {ctor: '[]'}
 	}
 };
 var _marccoquand$portfolio$View_Profile$view = function (model) {
@@ -15450,7 +15470,11 @@ var _marccoquand$portfolio$View_Profile$view = function (model) {
 				ctor: '::',
 				_0: A2(
 					_elm_lang$html$Html$h1,
-					{ctor: '[]'},
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html_Attributes$style(_marccoquand$portfolio$View_Profile$titleText),
+						_1: {ctor: '[]'}
+					},
 					{
 						ctor: '::',
 						_0: _elm_lang$html$Html$text('Hi, my name is Marc'),
@@ -15498,10 +15522,10 @@ var _marccoquand$portfolio$View_Project$buttonStyle = {
 				_0: _seanhess$elm_style$Style$fontWeight('bold'),
 				_1: {
 					ctor: '::',
-					_0: _seanhess$elm_style$Style$fontFamily('Assistant'),
+					_0: _seanhess$elm_style$Style$fontFamily('Montserrat'),
 					_1: {
 						ctor: '::',
-						_0: _seanhess$elm_style$Style$width('5.5rem'),
+						_0: _seanhess$elm_style$Style$width('7.0rem'),
 						_1: {
 							ctor: '::',
 							_0: _seanhess$elm_style$Style$color('black'),
@@ -15536,8 +15560,12 @@ var _marccoquand$portfolio$View_Project$projImg = {
 };
 var _marccoquand$portfolio$View_Project$textStyle = {
 	ctor: '::',
-	_0: _seanhess$elm_style$Style$fontFamily('Assistant'),
-	_1: {ctor: '[]'}
+	_0: _seanhess$elm_style$Style$fontFamily('Montserrat'),
+	_1: {
+		ctor: '::',
+		_0: _seanhess$elm_style$Style$lineHeight('150%'),
+		_1: {ctor: '[]'}
+	}
 };
 var _marccoquand$portfolio$View_Project$blockContainer = {
 	ctor: '::',
@@ -15547,17 +15575,25 @@ var _marccoquand$portfolio$View_Project$blockContainer = {
 		_0: _seanhess$elm_style$Style$justifyContent('center'),
 		_1: {
 			ctor: '::',
-			_0: _seanhess$elm_style$Style$margin('0'),
+			_0: _seanhess$elm_style$Style$paddingLeft('1rem'),
 			_1: {
 				ctor: '::',
-				_0: _seanhess$elm_style$Style$marginBottom('4rem'),
+				_0: _seanhess$elm_style$Style$paddingRight('1rem'),
 				_1: {
 					ctor: '::',
-					_0: _seanhess$elm_style$Style$display('flex'),
+					_0: _seanhess$elm_style$Style$margin('0'),
 					_1: {
 						ctor: '::',
-						_0: _seanhess$elm_style$Style$alignItems('flex-start'),
-						_1: {ctor: '[]'}
+						_0: _seanhess$elm_style$Style$marginBottom('4rem'),
+						_1: {
+							ctor: '::',
+							_0: _seanhess$elm_style$Style$display('flex'),
+							_1: {
+								ctor: '::',
+								_0: _seanhess$elm_style$Style$alignItems('flex-start'),
+								_1: {ctor: '[]'}
+							}
+						}
 					}
 				}
 			}
@@ -15578,7 +15614,7 @@ var _marccoquand$portfolio$View_Project$textButtonContainer = {
 				_0: _seanhess$elm_style$Style$flexDirection('column'),
 				_1: {
 					ctor: '::',
-					_0: _seanhess$elm_style$Style$fontSize('0.8rem'),
+					_0: _seanhess$elm_style$Style$fontSize('0.9rem'),
 					_1: {
 						ctor: '::',
 						_0: _seanhess$elm_style$Style$alignSelf('stretch'),
@@ -15721,8 +15757,8 @@ var _marccoquand$portfolio$View_Project$displayImage = function (p) {
 var _marccoquand$portfolio$View_Project$displayMedia = function (p) {
 	return _marccoquand$portfolio$View_Project$isVideo(p.imgPath) ? _marccoquand$portfolio$View_Project$displayVideo(p) : _marccoquand$portfolio$View_Project$displayImage(p);
 };
-var _marccoquand$portfolio$View_Project$view = F3(
-	function (model, d, p) {
+var _marccoquand$portfolio$View_Project$view = F2(
+	function (d, p) {
 		var _p0 = d;
 		if (_p0.ctor === 'Right') {
 			return A2(
@@ -15779,22 +15815,22 @@ var _marccoquand$portfolio$View_Project$view = F3(
 var _marccoquand$portfolio$Text_Freshcoast$text = A2(
 	_evancz$elm_markdown$Markdown$toHtml,
 	{ctor: '[]'},
-	'\n### Glassbåtarna\n\nGlassbåtarna (in english: Icecream boats) was an app by a team for\nthe company Freshcoast. Freshcoast is a company located in Gothenburg that sells\nnewspapers, bread, icecream and other stuff on the coast from boats. The goal of this app\nwas to make it easier for Freshcoast to find their customer by making an app\nwhere the users could report their location and find where the boats are. This\napp was developed in React native and is available for iOS and Android.\n\n');
+	'\n### GLASSBÅTARNA\n\nGlassbåtarna (in english: Icecream boats) was an app by a team for\nthe company Freshcoast. Freshcoast is a company located in Gothenburg that sells\nnewspapers, bread, icecream and other stuff on the coast from boats. The goal of this app\nwas to make it easier for Freshcoast to find their customer by making an app\nwhere the users could report their location and find where the boats are. This\napp was developed in React native and is available for iOS and Android.\n\n');
 var _marccoquand$portfolio$Text_Freshcoast$image = './src/static/img/icecreamboats.png';
 var _marccoquand$portfolio$Text_Smartcity$text = A2(
 	_evancz$elm_markdown$Markdown$toHtml,
 	{ctor: '[]'},
-	'\n### Norrsken - Safe smart city\n\nAs part of a course in Interactivity in Smart Environments we looked at how the\nfuture cities could become safer with the use of technology. This resulted in a\nconcept app where people could see which roads are most populated and then\nchoose them in order to feel safer when walking home at night.\n');
+	'\n### NORRSKEN - SAFE SMART CITY\n\nAs part of a course in Interactivity in Smart Environments we looked at how the\nfuture cities could become safer with the use of technology. This resulted in a\nconcept app where people could see which roads are most populated and then\nchoose them in order to feel safer when walking home at night.\n');
 var _marccoquand$portfolio$Text_Smartcity$image = './src/static/img/smartcity.png';
 var _marccoquand$portfolio$Text_Papahana$text = A2(
 	_evancz$elm_markdown$Markdown$toHtml,
 	{ctor: '[]'},
-	'\n### Papahana\n\nIn today\'s world it is difficult to meet new people. Papahana is a proof of\nconcept social media that focuses on creating smaller events so that you can\neasily meet new people. It was developed in Meteor which uses React, MongoDB and\nnode.js.\n\n');
+	'\n### PAPAHANA\n\nIn today\'s world it is difficult to meet new people. Papahana is a proof of\nconcept social media that focuses on creating smaller events so that you can\neasily meet new people. It was developed in Meteor which uses React, MongoDB and\nnode.js.\n\n');
 var _marccoquand$portfolio$Text_Papahana$image = './src/static/video/papahana.mp4';
 var _marccoquand$portfolio$Text_Courses$text = A2(
 	_evancz$elm_markdown$Markdown$toHtml,
 	{ctor: '[]'},
-	'\n### ID Portalen Course Rating System\n\nAt the Interaction and design programme there\'s a lot of courses to choose from.\nID portalen is a system developed in Meteor (React, MongoDB, Node.js) that\nallows you to rate and comment courses at the programme to make it easier for\nothers to choose which courses to take.\n\n');
+	'\n### ID PORTALEN \n\nAt the Interaction and design programme there\'s a lot of courses to choose from.\nID portalen is a system developed in Meteor (React, MongoDB, Node.js) that\nallows you to rate and comment courses at the programme to make it easier for\nothers to choose which courses to take.\n\n');
 var _marccoquand$portfolio$Text_Courses$image = './src/static/img/umu.png';
 var _marccoquand$portfolio$View_ProjectList$container = {
 	ctor: '::',
@@ -15817,44 +15853,206 @@ var _marccoquand$portfolio$View_ProjectList$container = {
 		}
 	}
 };
-var _marccoquand$portfolio$View_ProjectList$renderProject = F3(
-	function (model, i, p) {
+var _marccoquand$portfolio$View_ProjectList$renderProject = F2(
+	function (i, p) {
 		return _elm_lang$core$Native_Utils.eq(
 			A2(_elm_lang$core$Basics_ops['%'], i, 2),
-			0) ? A3(_marccoquand$portfolio$View_Project$view, model, _marccoquand$portfolio$Model_Model$Left, p) : A3(_marccoquand$portfolio$View_Project$view, model, _marccoquand$portfolio$Model_Model$Right, p);
+			0) ? A2(_marccoquand$portfolio$View_Project$view, _marccoquand$portfolio$Model_Model$Left, p) : A2(_marccoquand$portfolio$View_Project$view, _marccoquand$portfolio$Model_Model$Right, p);
 	});
-var _marccoquand$portfolio$View_ProjectList$renderProjects = F2(
-	function (model, p) {
-		return A2(
-			_elm_lang$html$Html$div,
-			{
-				ctor: '::',
-				_0: _elm_lang$html$Html_Attributes$style(_marccoquand$portfolio$View_ProjectList$container),
-				_1: {ctor: '[]'}
-			},
-			A2(
-				_elm_lang$core$List$indexedMap,
-				_marccoquand$portfolio$View_ProjectList$renderProject(model),
-				p));
-	});
-var _marccoquand$portfolio$View_ProjectList$view = function (model) {
+var _marccoquand$portfolio$View_ProjectList$renderProjects = function (p) {
 	return A2(
-		_marccoquand$portfolio$View_ProjectList$renderProjects,
-		model,
+		_elm_lang$html$Html$div,
 		{
 			ctor: '::',
-			_0: {imgPath: _marccoquand$portfolio$Text_Freshcoast$image, text: _marccoquand$portfolio$Text_Freshcoast$text, buttonLink: 'https://github.com/f95johansson/IceCreamBoats', buttonText: 'View on Github'},
+			_0: _elm_lang$html$Html_Attributes$style(_marccoquand$portfolio$View_ProjectList$container),
+			_1: {ctor: '[]'}
+		},
+		A2(_elm_lang$core$List$indexedMap, _marccoquand$portfolio$View_ProjectList$renderProject, p));
+};
+var _marccoquand$portfolio$View_ProjectList$view = _marccoquand$portfolio$View_ProjectList$renderProjects(
+	{
+		ctor: '::',
+		_0: {imgPath: _marccoquand$portfolio$Text_Freshcoast$image, text: _marccoquand$portfolio$Text_Freshcoast$text, buttonLink: 'https://github.com/f95johansson/IceCreamBoats', buttonText: 'View on Github'},
+		_1: {
+			ctor: '::',
+			_0: {imgPath: _marccoquand$portfolio$Text_Papahana$image, text: _marccoquand$portfolio$Text_Papahana$text, buttonLink: 'https://github.com/MarcCoquand/papahana', buttonText: 'View on Github'},
 			_1: {
 				ctor: '::',
-				_0: {imgPath: _marccoquand$portfolio$Text_Papahana$image, text: _marccoquand$portfolio$Text_Papahana$text, buttonLink: 'https://github.com/MarcCoquand/papahana', buttonText: 'View on Github'},
+				_0: {imgPath: _marccoquand$portfolio$Text_Courses$image, text: _marccoquand$portfolio$Text_Courses$text, buttonLink: 'https://github.com/Isakdl/IDportal', buttonText: 'View on Github'},
 				_1: {
 					ctor: '::',
-					_0: {imgPath: _marccoquand$portfolio$Text_Courses$image, text: _marccoquand$portfolio$Text_Courses$text, buttonLink: 'https://github.com/Isakdl/IDportal', buttonText: 'View on Github'},
+					_0: {imgPath: _marccoquand$portfolio$Text_Smartcity$image, text: _marccoquand$portfolio$Text_Smartcity$text, buttonLink: '', buttonText: ''},
+					_1: {ctor: '[]'}
+				}
+			}
+		}
+	});
+var _marccoquand$portfolio$View_Footer$buttonStyle = {
+	ctor: '::',
+	_0: _seanhess$elm_style$Style$backgroundColor('white'),
+	_1: {
+		ctor: '::',
+		_0: {ctor: '_Tuple2', _0: 'box-sizing', _1: 'border-box'},
+		_1: {
+			ctor: '::',
+			_0: _seanhess$elm_style$Style$border('none'),
+			_1: {
+				ctor: '::',
+				_0: _seanhess$elm_style$Style$fontWeight('bold'),
+				_1: {
+					ctor: '::',
+					_0: _seanhess$elm_style$Style$fontFamily('Montserrat'),
 					_1: {
 						ctor: '::',
-						_0: {imgPath: _marccoquand$portfolio$Text_Smartcity$image, text: _marccoquand$portfolio$Text_Smartcity$text, buttonLink: '', buttonText: ''},
-						_1: {ctor: '[]'}
+						_0: _seanhess$elm_style$Style$margin(_seanhess$elm_style$Style$auto),
+						_1: {
+							ctor: '::',
+							_0: _seanhess$elm_style$Style$marginTop('0.5rem'),
+							_1: {
+								ctor: '::',
+								_0: _seanhess$elm_style$Style$width('4.5rem'),
+								_1: {
+									ctor: '::',
+									_0: _seanhess$elm_style$Style$color('black'),
+									_1: {
+										ctor: '::',
+										_0: _seanhess$elm_style$Style$textDecoration('none'),
+										_1: {
+											ctor: '::',
+											_0: _seanhess$elm_style$Style$display('flex'),
+											_1: {
+												ctor: '::',
+												_0: _seanhess$elm_style$Style$maxWidth('15rem'),
+												_1: {
+													ctor: '::',
+													_0: _seanhess$elm_style$Style$flexDirection('column'),
+													_1: {
+														ctor: '::',
+														_0: _seanhess$elm_style$Style$alignSelf('stretch'),
+														_1: {ctor: '[]'}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
 					}
+				}
+			}
+		}
+	}
+};
+var _marccoquand$portfolio$View_Footer$footerText = {
+	ctor: '::',
+	_0: _seanhess$elm_style$Style$textAlign(_seanhess$elm_style$Style$center),
+	_1: {
+		ctor: '::',
+		_0: _seanhess$elm_style$Style$justifyContent('center'),
+		_1: {
+			ctor: '::',
+			_0: _seanhess$elm_style$Style$margin(_seanhess$elm_style$Style$auto),
+			_1: {
+				ctor: '::',
+				_0: _seanhess$elm_style$Style$marginTop('2rem'),
+				_1: {
+					ctor: '::',
+					_0: _seanhess$elm_style$Style$fontFamily('Montserrat'),
+					_1: {
+						ctor: '::',
+						_0: _seanhess$elm_style$Style$minWidth('20rem'),
+						_1: {
+							ctor: '::',
+							_0: _seanhess$elm_style$Style$maxWidth('35rem'),
+							_1: {
+								ctor: '::',
+								_0: _seanhess$elm_style$Style$marginBottom('2rem'),
+								_1: {
+									ctor: '::',
+									_0: _seanhess$elm_style$Style$fontSize('0.8rem'),
+									_1: {ctor: '[]'}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+};
+var _marccoquand$portfolio$View_Footer$view = function (model) {
+	return A2(
+		_elm_lang$html$Html$div,
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html_Attributes$style(_marccoquand$portfolio$View_Footer$footerText),
+			_1: {ctor: '[]'}
+		},
+		{
+			ctor: '::',
+			_0: A2(
+				_elm_lang$html$Html$h2,
+				{ctor: '[]'},
+				{
+					ctor: '::',
+					_0: _elm_lang$html$Html$text('Get in touch'),
+					_1: {ctor: '[]'}
+				}),
+			_1: {
+				ctor: '::',
+				_0: _elm_lang$html$Html$text('Email: mcoquand@gmail.com'),
+				_1: {
+					ctor: '::',
+					_0: A2(
+						_elm_lang$html$Html$a,
+						A2(
+							_elm_lang$core$Basics_ops['++'],
+							{
+								ctor: '::',
+								_0: _elm_lang$html$Html_Attributes$target('_blank'),
+								_1: {
+									ctor: '::',
+									_0: _elm_lang$html$Html_Attributes$href('https://www.linkedin.com/in/marc-coquand-7449b3123/'),
+									_1: {
+										ctor: '::',
+										_0: _elm_lang$html$Html_Attributes$style(_marccoquand$portfolio$View_Footer$buttonStyle),
+										_1: {ctor: '[]'}
+									}
+								}
+							},
+							_identicalsnowflake$elm_dynamic_style$DynamicStyle$hover(
+								{
+									ctor: '::',
+									_0: {ctor: '_Tuple3', _0: 'border-bottom-width', _1: '0px', _2: '2px'},
+									_1: {
+										ctor: '::',
+										_0: {ctor: '_Tuple3', _0: 'border-bottom-color', _1: 'black', _2: 'red'},
+										_1: {
+											ctor: '::',
+											_0: {ctor: '_Tuple3', _0: 'border-bottom-style', _1: 'none', _2: 'solid'},
+											_1: {
+												ctor: '::',
+												_0: {ctor: '_Tuple3', _0: 'box-sizing', _1: 'border-box', _2: 'border-box'},
+												_1: {
+													ctor: '::',
+													_0: {ctor: '_Tuple3', _0: 'cursor', _1: '', _2: 'pointer'},
+													_1: {
+														ctor: '::',
+														_0: {ctor: '_Tuple3', _0: 'user-select', _1: 'none', _2: 'none'},
+														_1: {ctor: '[]'}
+													}
+												}
+											}
+										}
+									}
+								})),
+						{
+							ctor: '::',
+							_0: _elm_lang$html$Html$text('LinkedIn'),
+							_1: {ctor: '[]'}
+						}),
+					_1: {ctor: '[]'}
 				}
 			}
 		});
@@ -15868,8 +16066,12 @@ var _marccoquand$portfolio$View_View$view = function (model) {
 			_0: _marccoquand$portfolio$View_Profile$view(model),
 			_1: {
 				ctor: '::',
-				_0: _marccoquand$portfolio$View_ProjectList$view(model),
-				_1: {ctor: '[]'}
+				_0: _marccoquand$portfolio$View_ProjectList$view,
+				_1: {
+					ctor: '::',
+					_0: _marccoquand$portfolio$View_Footer$view(model),
+					_1: {ctor: '[]'}
+				}
 			}
 		});
 };
