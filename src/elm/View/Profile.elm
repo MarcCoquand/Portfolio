@@ -13,7 +13,7 @@ view model =
     , text """I strive to make everything beautiful and valuable. I achieve this
     through focusing on the user's needs. I have a strong interest in UX,
     ethnography, programming and service design. Welcome to my portfolio,
-    written in the beautiful functional programming language Elm!"""
+    written in the functional programming language Elm!"""
     ]
 
 

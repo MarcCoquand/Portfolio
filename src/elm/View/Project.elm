@@ -108,7 +108,7 @@ buttonStyle =
   , border "none"
   , fontWeight "bold"
   , fontFamily "Assistant"
-  , Style.width "9rem"
+  , Style.width "5.5rem"
   , color "black"
   , textDecoration "none"
   ]
