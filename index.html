@@ -1,7 +1,6 @@
 <!DOCTYPE HTML>
 <html><head><meta name="viewport" content="width=device-width,
-    initial-scale=1,user-scalable=no" charset="UTF-8"><title>Main</title><style>@import
-url('https://fonts.googleapis.com/css?family=Montserrat:200|Quicksand:300’);html,head,body { padding:0; margin:0; }
+    initial-scale=1,user-scalable=no" charset="UTF-8"><title>Marc Coquand</title><style>@import url('https://fonts.googleapis.com/css?family=Montserrat');html,head,body { padding:0; margin:0; }
 body { font-family: calibri, helvetica, arial, sans-serif; }</style><script type="text/javascript">
 (function() {
 'use strict';
@@ -15421,7 +15420,11 @@ var _marccoquand$portfolio$View_Profile$headerText = {
 													_1: {
 														ctor: '::',
 														_0: _seanhess$elm_style$Style$lineHeight('190%'),
-														_1: {ctor: '[]'}
+														_1: {
+															ctor: '::',
+															_0: _seanhess$elm_style$Style$letterSpacing('0.1rem'),
+															_1: {ctor: '[]'}
+														}
 													}
 												}
 											}
@@ -15438,10 +15441,10 @@ var _marccoquand$portfolio$View_Profile$headerText = {
 };
 var _marccoquand$portfolio$View_Profile$titleText = {
 	ctor: '::',
-	_0: _seanhess$elm_style$Style$fontFamily('Quicksand'),
+	_0: _seanhess$elm_style$Style$fontFamily('Montserrat'),
 	_1: {
 		ctor: '::',
-		_0: _seanhess$elm_style$Style$fontWeight('normal'),
+		_0: _seanhess$elm_style$Style$letterSpacing('0.2rem'),
 		_1: {ctor: '[]'}
 	}
 };
@@ -15470,7 +15473,7 @@ var _marccoquand$portfolio$View_Profile$view = function (model) {
 			_1: {
 				ctor: '::',
 				_0: A2(
-					_elm_lang$html$Html$h1,
+					_elm_lang$html$Html$h2,
 					{
 						ctor: '::',
 						_0: _elm_lang$html$Html_Attributes$style(_marccoquand$portfolio$View_Profile$titleText),
@@ -15823,25 +15826,117 @@ var _marccoquand$portfolio$View_Project$view = F2(
 				});
 		}
 	});
+var _marccoquand$portfolio$Text_Freshcoast$headerStyle = {
+	ctor: '::',
+	_0: _seanhess$elm_style$Style$letterSpacing('0.2rem'),
+	_1: {ctor: '[]'}
+};
 var _marccoquand$portfolio$Text_Freshcoast$text = A2(
-	_evancz$elm_markdown$Markdown$toHtml,
+	_elm_lang$html$Html$div,
 	{ctor: '[]'},
-	'\n### GLASSBÅTARNA\n\nGlassbåtarna (in english: Icecream boats) was an app by a team for\nthe company Freshcoast. Freshcoast is a company located in Gothenburg that sells\nnewspapers, bread, icecream and other stuff on the coast from boats. The goal of this app\nwas to make it easier for Freshcoast to find their customer by making an app\nwhere the users could report their location and find where the boats are. This\napp was developed in React native and is available for iOS and Android.\n\n');
+	{
+		ctor: '::',
+		_0: A2(
+			_evancz$elm_markdown$Markdown$toHtml,
+			{
+				ctor: '::',
+				_0: _elm_lang$html$Html_Attributes$style(_marccoquand$portfolio$Text_Freshcoast$headerStyle),
+				_1: {ctor: '[]'}
+			},
+			'\n### GLASSBÅTARNA '),
+		_1: {
+			ctor: '::',
+			_0: A2(
+				_evancz$elm_markdown$Markdown$toHtml,
+				{ctor: '[]'},
+				'\n\nGlassbåtarna (in english: Icecream boats) was an app by a team for\nthe company Freshcoast. Freshcoast is a company located in Gothenburg that sells\nnewspapers, bread, icecream and other stuff on the coast from boats. The goal of this app\nwas to make it easier for Freshcoast to find their customer by making an app\nwhere the users could report their location and find where the boats are. This\napp was developed in React native and is available for iOS and Android.\n\n'),
+			_1: {ctor: '[]'}
+		}
+	});
 var _marccoquand$portfolio$Text_Freshcoast$image = './src/static/img/icecreamboats.png';
+var _marccoquand$portfolio$Text_Smartcity$headerStyle = {
+	ctor: '::',
+	_0: _seanhess$elm_style$Style$letterSpacing('0.2rem'),
+	_1: {ctor: '[]'}
+};
 var _marccoquand$portfolio$Text_Smartcity$text = A2(
-	_evancz$elm_markdown$Markdown$toHtml,
+	_elm_lang$html$Html$div,
 	{ctor: '[]'},
-	'\n### NORRSKEN - SAFE SMART CITY\n\nAs part of a course in Interactivity in Smart Environments we looked at how the\nfuture cities could become safer with the use of technology. This resulted in a\nconcept app where people could see which roads are most populated and then\nchoose them in order to feel safer when walking home at night.\n');
+	{
+		ctor: '::',
+		_0: A2(
+			_evancz$elm_markdown$Markdown$toHtml,
+			{
+				ctor: '::',
+				_0: _elm_lang$html$Html_Attributes$style(_marccoquand$portfolio$Text_Smartcity$headerStyle),
+				_1: {ctor: '[]'}
+			},
+			'\n### NORRSKEN '),
+		_1: {
+			ctor: '::',
+			_0: A2(
+				_evancz$elm_markdown$Markdown$toHtml,
+				{ctor: '[]'},
+				'\n\nAs part of a course in Interactivity in Smart Environments we looked at how the\nfuture cities could become safer with the use of technology. This resulted in a\nconcept app where people could see which roads are most populated and then\nchoose them in order to feel safer when walking home at night.\n'),
+			_1: {ctor: '[]'}
+		}
+	});
 var _marccoquand$portfolio$Text_Smartcity$image = './src/static/img/smartcity.png';
+var _marccoquand$portfolio$Text_Papahana$headerStyle = {
+	ctor: '::',
+	_0: _seanhess$elm_style$Style$letterSpacing('0.2rem'),
+	_1: {ctor: '[]'}
+};
 var _marccoquand$portfolio$Text_Papahana$text = A2(
-	_evancz$elm_markdown$Markdown$toHtml,
+	_elm_lang$html$Html$div,
 	{ctor: '[]'},
-	'\n### PAPAHANA\n\nIn today\'s world it is difficult to meet new people. Papahana is a proof of\nconcept social media that focuses on creating smaller events so that you can\neasily meet new people. It was developed in Meteor which uses React, MongoDB and\nnode.js.\n\n');
+	{
+		ctor: '::',
+		_0: A2(
+			_evancz$elm_markdown$Markdown$toHtml,
+			{
+				ctor: '::',
+				_0: _elm_lang$html$Html_Attributes$style(_marccoquand$portfolio$Text_Papahana$headerStyle),
+				_1: {ctor: '[]'}
+			},
+			'\n### PAPAHANA '),
+		_1: {
+			ctor: '::',
+			_0: A2(
+				_evancz$elm_markdown$Markdown$toHtml,
+				{ctor: '[]'},
+				'\n\nIn today\'s world it is difficult to meet new people. Papahana is a proof of\nconcept social media that focuses on creating smaller events so that you can\neasily meet new people. It was developed in Meteor which uses React, MongoDB and\nnode.js.\n\n'),
+			_1: {ctor: '[]'}
+		}
+	});
 var _marccoquand$portfolio$Text_Papahana$image = './src/static/video/papahana.mp4';
+var _marccoquand$portfolio$Text_Courses$headerStyle = {
+	ctor: '::',
+	_0: _seanhess$elm_style$Style$letterSpacing('0.2rem'),
+	_1: {ctor: '[]'}
+};
 var _marccoquand$portfolio$Text_Courses$text = A2(
-	_evancz$elm_markdown$Markdown$toHtml,
+	_elm_lang$html$Html$div,
 	{ctor: '[]'},
-	'\n### ID PORTALEN \n\nAt the Interaction and design programme there\'s a lot of courses to choose from.\nID portalen is a system developed in Meteor (React, MongoDB, Node.js) that\nallows you to rate and comment courses at the programme to make it easier for\nothers to choose which courses to take.\n\n');
+	{
+		ctor: '::',
+		_0: A2(
+			_evancz$elm_markdown$Markdown$toHtml,
+			{
+				ctor: '::',
+				_0: _elm_lang$html$Html_Attributes$style(_marccoquand$portfolio$Text_Courses$headerStyle),
+				_1: {ctor: '[]'}
+			},
+			'\n### ID PORTALEN '),
+		_1: {
+			ctor: '::',
+			_0: A2(
+				_evancz$elm_markdown$Markdown$toHtml,
+				{ctor: '[]'},
+				'\n\nAt the Interaction and design programme there\'s a lot of courses to choose from.\nID portalen is a system developed in Meteor (React, MongoDB, Node.js) that\nallows you to rate and comment courses at the programme to make it easier for\nothers to choose which courses to take.\n\n'),
+			_1: {ctor: '[]'}
+		}
+	});
 var _marccoquand$portfolio$Text_Courses$image = './src/static/img/umu.png';
 var _marccoquand$portfolio$View_ProjectList$container = {
 	ctor: '::',

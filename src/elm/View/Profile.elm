@@ -10,7 +10,7 @@ view : Model -> Html Msg
 view model =
   div [style headerText] 
     [ img [src "./src/static/img/profile.png", style profileImage] []
-    , h1 [style titleText] [text "Hi, my name is Marc"]
+    , h2 [style titleText] [text "Hi, my name is Marc"]
     , text """I strive to make everything beautiful and valuable. I achieve this
     through focusing on the user's needs. I have a strong interest in UX,
     ethnography, programming and service design. Welcome to my portfolio,
@@ -22,8 +22,8 @@ view model =
 titleText : List Style
 titleText = 
   [ 
-    fontFamily "Quicksand"
-  , fontWeight "normal"
+    fontFamily "Montserrat"
+  , letterSpacing "0.2rem"
   ]
 
 
@@ -43,6 +43,7 @@ headerText =
   , paddingRight "1rem"
   , fontSize "0.9rem"
   , lineHeight "190%"
+  , letterSpacing "0.1rem"
   ]
 
 profileImage : List Style

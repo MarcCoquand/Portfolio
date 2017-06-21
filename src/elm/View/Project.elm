@@ -92,7 +92,6 @@ blockContainer =
   , marginBottom "4rem"
   , display "flex"
   , alignItems "flex-start"
-
   ]
 
 textStyle : List Style
