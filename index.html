@@ -16016,26 +16016,30 @@ var _marccoquand$portfolio$View_Footer$buttonStyle = {
 							_0: _seanhess$elm_style$Style$marginTop('0.5rem'),
 							_1: {
 								ctor: '::',
-								_0: _seanhess$elm_style$Style$width('4.5rem'),
+								_0: _seanhess$elm_style$Style$width('4.8rem'),
 								_1: {
 									ctor: '::',
-									_0: _seanhess$elm_style$Style$color('black'),
+									_0: _seanhess$elm_style$Style$marginRight('0.5rem'),
 									_1: {
 										ctor: '::',
-										_0: _seanhess$elm_style$Style$textDecoration('none'),
+										_0: _seanhess$elm_style$Style$marginLeft('0.5rem'),
 										_1: {
 											ctor: '::',
-											_0: _seanhess$elm_style$Style$display('flex'),
+											_0: _seanhess$elm_style$Style$color('black'),
 											_1: {
 												ctor: '::',
-												_0: _seanhess$elm_style$Style$maxWidth('15rem'),
+												_0: _seanhess$elm_style$Style$textDecoration('none'),
 												_1: {
 													ctor: '::',
-													_0: _seanhess$elm_style$Style$flexDirection('column'),
+													_0: _seanhess$elm_style$Style$display('inlineBlock'),
 													_1: {
 														ctor: '::',
-														_0: _seanhess$elm_style$Style$alignSelf('stretch'),
-														_1: {ctor: '[]'}
+														_0: _seanhess$elm_style$Style$maxWidth('3rem'),
+														_1: {
+															ctor: '::',
+															_0: _seanhess$elm_style$Style$flexBasis('0'),
+															_1: {ctor: '[]'}
+														}
 													}
 												}
 											}
@@ -16048,6 +16052,15 @@ var _marccoquand$portfolio$View_Footer$buttonStyle = {
 				}
 			}
 		}
+	}
+};
+var _marccoquand$portfolio$View_Footer$buttonContainer = {
+	ctor: '::',
+	_0: _seanhess$elm_style$Style$display('inline-block'),
+	_1: {
+		ctor: '::',
+		_0: _seanhess$elm_style$Style$marginTop('0.5rem'),
+		_1: {ctor: '[]'}
 	}
 };
 var _marccoquand$portfolio$View_Footer$footerText = {
@@ -16076,8 +16089,16 @@ var _marccoquand$portfolio$View_Footer$footerText = {
 								_0: _seanhess$elm_style$Style$marginBottom('2rem'),
 								_1: {
 									ctor: '::',
-									_0: _seanhess$elm_style$Style$fontSize('0.8rem'),
-									_1: {ctor: '[]'}
+									_0: _seanhess$elm_style$Style$display('flex'),
+									_1: {
+										ctor: '::',
+										_0: _seanhess$elm_style$Style$flexDirection('column'),
+										_1: {
+											ctor: '::',
+											_0: _seanhess$elm_style$Style$fontSize('0.8rem'),
+											_1: {ctor: '[]'}
+										}
+									}
 								}
 							}
 						}
@@ -16111,52 +16132,114 @@ var _marccoquand$portfolio$View_Footer$view = function (model) {
 				_1: {
 					ctor: '::',
 					_0: A2(
-						_elm_lang$html$Html$a,
-						A2(
-							_elm_lang$core$Basics_ops['++'],
-							{
-								ctor: '::',
-								_0: _elm_lang$html$Html_Attributes$target('_blank'),
-								_1: {
-									ctor: '::',
-									_0: _elm_lang$html$Html_Attributes$href('https://www.linkedin.com/in/marc-coquand-7449b3123/'),
-									_1: {
+						_elm_lang$html$Html$div,
+						{
+							ctor: '::',
+							_0: _elm_lang$html$Html_Attributes$style(_marccoquand$portfolio$View_Footer$buttonContainer),
+							_1: {ctor: '[]'}
+						},
+						{
+							ctor: '::',
+							_0: A2(
+								_elm_lang$html$Html$a,
+								A2(
+									_elm_lang$core$Basics_ops['++'],
+									{
 										ctor: '::',
-										_0: _elm_lang$html$Html_Attributes$style(_marccoquand$portfolio$View_Footer$buttonStyle),
-										_1: {ctor: '[]'}
-									}
-								}
-							},
-							_identicalsnowflake$elm_dynamic_style$DynamicStyle$hover(
-								{
-									ctor: '::',
-									_0: {ctor: '_Tuple3', _0: 'border-bottom-width', _1: '0px', _2: '2px'},
-									_1: {
-										ctor: '::',
-										_0: {ctor: '_Tuple3', _0: 'border-bottom-color', _1: 'black', _2: 'red'},
+										_0: _elm_lang$html$Html_Attributes$target('_blank'),
 										_1: {
 											ctor: '::',
-											_0: {ctor: '_Tuple3', _0: 'border-bottom-style', _1: 'none', _2: 'solid'},
+											_0: _elm_lang$html$Html_Attributes$href('https://www.linkedin.com/in/marc-coquand-7449b3123/'),
 											_1: {
 												ctor: '::',
-												_0: {ctor: '_Tuple3', _0: 'box-sizing', _1: 'border-box', _2: 'border-box'},
+												_0: _elm_lang$html$Html_Attributes$style(_marccoquand$portfolio$View_Footer$buttonStyle),
+												_1: {ctor: '[]'}
+											}
+										}
+									},
+									_identicalsnowflake$elm_dynamic_style$DynamicStyle$hover(
+										{
+											ctor: '::',
+											_0: {ctor: '_Tuple3', _0: 'border-bottom-width', _1: '2px', _2: '2px'},
+											_1: {
+												ctor: '::',
+												_0: {ctor: '_Tuple3', _0: 'border-bottom-color', _1: 'transparent', _2: 'red'},
 												_1: {
 													ctor: '::',
-													_0: {ctor: '_Tuple3', _0: 'cursor', _1: '', _2: 'pointer'},
+													_0: {ctor: '_Tuple3', _0: 'border-bottom-style', _1: 'solid', _2: 'solid'},
 													_1: {
 														ctor: '::',
-														_0: {ctor: '_Tuple3', _0: 'user-select', _1: 'none', _2: 'none'},
-														_1: {ctor: '[]'}
+														_0: {ctor: '_Tuple3', _0: 'box-sizing', _1: 'border-box', _2: 'border-box'},
+														_1: {
+															ctor: '::',
+															_0: {ctor: '_Tuple3', _0: 'cursor', _1: '', _2: 'pointer'},
+															_1: {
+																ctor: '::',
+																_0: {ctor: '_Tuple3', _0: 'user-select', _1: 'none', _2: 'none'},
+																_1: {ctor: '[]'}
+															}
+														}
 													}
 												}
 											}
-										}
-									}
-								})),
-						{
-							ctor: '::',
-							_0: _elm_lang$html$Html$text('LinkedIn'),
-							_1: {ctor: '[]'}
+										})),
+								{
+									ctor: '::',
+									_0: _elm_lang$html$Html$text('LinkedIn'),
+									_1: {ctor: '[]'}
+								}),
+							_1: {
+								ctor: '::',
+								_0: A2(
+									_elm_lang$html$Html$a,
+									A2(
+										_elm_lang$core$Basics_ops['++'],
+										{
+											ctor: '::',
+											_0: _elm_lang$html$Html_Attributes$target('_blank'),
+											_1: {
+												ctor: '::',
+												_0: _elm_lang$html$Html_Attributes$href('https://medium.com/@marcteodorfrancoiscoquand'),
+												_1: {
+													ctor: '::',
+													_0: _elm_lang$html$Html_Attributes$style(_marccoquand$portfolio$View_Footer$buttonStyle),
+													_1: {ctor: '[]'}
+												}
+											}
+										},
+										_identicalsnowflake$elm_dynamic_style$DynamicStyle$hover(
+											{
+												ctor: '::',
+												_0: {ctor: '_Tuple3', _0: 'border-bottom-width', _1: '2px', _2: '2px'},
+												_1: {
+													ctor: '::',
+													_0: {ctor: '_Tuple3', _0: 'border-bottom-color', _1: 'transparent', _2: 'red'},
+													_1: {
+														ctor: '::',
+														_0: {ctor: '_Tuple3', _0: 'border-bottom-style', _1: 'solid', _2: 'solid'},
+														_1: {
+															ctor: '::',
+															_0: {ctor: '_Tuple3', _0: 'box-sizing', _1: 'border-box', _2: 'border-box'},
+															_1: {
+																ctor: '::',
+																_0: {ctor: '_Tuple3', _0: 'cursor', _1: '', _2: 'pointer'},
+																_1: {
+																	ctor: '::',
+																	_0: {ctor: '_Tuple3', _0: 'user-select', _1: 'none', _2: 'none'},
+																	_1: {ctor: '[]'}
+																}
+															}
+														}
+													}
+												}
+											})),
+									{
+										ctor: '::',
+										_0: _elm_lang$html$Html$text('Medium'),
+										_1: {ctor: '[]'}
+									}),
+								_1: {ctor: '[]'}
+							}
 						}),
 					_1: {ctor: '[]'}
 				}

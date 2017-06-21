@@ -12,24 +12,40 @@ view model =
   div [style footerText] 
     [ h2 [] [text "Get in touch"]
     , text "Email: mcoquand@gmail.com"
-  , a
-    ( 
-      [ target "_blank" 
-      , href "https://www.linkedin.com/in/marc-coquand-7449b3123/"
-      , style buttonStyle
-      ] 
-      ++
-      hover
-        [ ("border-bottom-width", "0px", "2px")
-        , ("border-bottom-color", "black", "red")
-        , ("border-bottom-style", "none", "solid")
-        , ("box-sizing", "border-box", "border-box")
-        , ("cursor", "", "pointer")
-        , ("user-select", "none", "none")
-        ]
-    ) 
-    [text "LinkedIn"]
+    , div [style buttonContainer] 
+      [ a ( 
+        [ target "_blank" 
+        , href "https://www.linkedin.com/in/marc-coquand-7449b3123/"
+        , style buttonStyle
+        ] 
+        ++
+        hover
+          [ ("border-bottom-width", "2px", "2px")
+          , ("border-bottom-color", "transparent", "red")
+          , ("border-bottom-style", "solid", "solid")
+          , ("box-sizing", "border-box", "border-box")
+          , ("cursor", "", "pointer")
+          , ("user-select", "none", "none")
+          ]) 
+        [text "LinkedIn"]
+      , a (
+        [ target "_blank" 
+        , href "https://medium.com/@marcteodorfrancoiscoquand"
+        , style buttonStyle
+        ] 
+        ++
+        hover
+          [ ("border-bottom-width", "2px", "2px")
+          , ("border-bottom-color", "transparent", "red")
+          , ("border-bottom-style", "solid", "solid")
+          , ("box-sizing", "border-box", "border-box")
+          , ("cursor", "", "pointer")
+          , ("user-select", "none", "none")
+          ]) 
+        [text "Medium"]
+      ]
     ]
+      
 
 
 -- CSS STYLES
@@ -44,7 +60,15 @@ footerText =
   , minWidth "20rem"
   , maxWidth "35rem"
   , marginBottom "2rem"
+  , display "flex"
+  , flexDirection "column"
   , fontSize "0.8rem"
+  ]
+
+buttonContainer : List Style
+buttonContainer = 
+  [ display "inline-block"
+  , marginTop "0.5rem"
   ]
 
 buttonStyle : List Style
@@ -56,11 +80,12 @@ buttonStyle =
   , fontFamily "Montserrat"
   , margin auto
   , marginTop "0.5rem"
-  , Style.width "4.5rem"
+  , Style.width "4.8rem"
+  , marginRight "0.5rem"
+  , marginLeft "0.5rem"
   , color "black"
   , textDecoration "none"
-  , display "flex"
-  , maxWidth "15rem"
-  , flexDirection "column"
-  , alignSelf "stretch"
+  , display "inlineBlock"
+  , maxWidth "3rem"
+  , flexBasis "0"
   ]
