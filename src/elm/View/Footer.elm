@@ -3,6 +3,7 @@
 module View.Footer exposing (view)
 import Model.Model exposing (..)
 import Style exposing (..)
+import Color exposing (..)
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import DynamicStyle exposing (..)
@@ -43,6 +44,21 @@ view model =
           , ("user-select", "none", "none")
           ]) 
         [text "Medium"]
+      , a (
+        [ target "_blank" 
+        , href "https://www.facebook.com/mcoquand"
+        , style buttonStyle
+        ] 
+        ++
+        hover
+          [ ("border-bottom-width", "2px", "2px")
+          , ("border-bottom-color", "transparent", "red")
+          , ("border-bottom-style", "solid", "solid")
+          , ("box-sizing", "border-box", "border-box")
+          , ("cursor", "", "pointer")
+          , ("user-select", "none", "none")
+          ]) 
+        [text "Facebook"]
       ]
     ]
       
@@ -63,6 +79,7 @@ footerText =
   , display "flex"
   , flexDirection "column"
   , fontSize "0.8rem"
+  , color (color_ (rgb 64 64 64))
   ]
 
 buttonContainer : List Style
@@ -88,4 +105,5 @@ buttonStyle =
   , display "inlineBlock"
   , maxWidth "3rem"
   , flexBasis "0"
+  , color (color_ (rgb 64 64 64))
   ]

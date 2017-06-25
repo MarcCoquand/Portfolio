@@ -10,6 +10,7 @@ import Animation exposing (render)
 import DynamicStyle exposing (..)
 import Utils.Functions exposing (dropWhile)
 import Json.Encode as Encode
+import Color exposing (..)
 
 displayImage : Project -> Html Msg
 displayImage p =
@@ -36,27 +37,36 @@ displayMedia p =
   else 
     displayImage p
 
-displayText : Project -> Html Msg
-displayText p =
+displayLink : Project -> String -> Html Msg
+displayLink p buttonColor = 
+  if p.buttonLink == "" then div [] [] 
+  else 
+    div [] 
+    [ a
+      ( 
+        [ target "_blank" 
+        , href p.buttonLink
+        , style (buttonStyle ++ [color buttonColor])
+        ] 
+        ++
+        hover
+          [ ("border-bottom-width", "2px", "2px")
+          , ("border-bottom-color", "transparent", buttonColor)
+          , ("border-bottom-style", "solid", "solid")
+          , ("box-sizing", "border-box", "border-box")
+          , ("cursor", "", "pointer")
+          , ("user-select", "none", "none")
+          ]
+      ) 
+      [text p.buttonText]
+    ]
+
+
+displayText : Project -> String -> Html Msg
+displayText p buttonColor =
   div [style textButtonContainer]
-  [ div [style textStyle] [p.text]
-  , a
-    ( 
-      [ target "_blank" 
-      , href p.buttonLink
-      , style buttonStyle
-      ] 
-      ++
-      hover
-        [ ("border-bottom-width", "2px", "2px")
-        , ("border-bottom-color", "transparent", "red")
-        , ("border-bottom-style", "solid", "solid")
-        , ("box-sizing", "border-box", "border-box")
-        , ("cursor", "", "pointer")
-        , ("user-select", "none", "none")
-        ]
-    ) 
-    [text p.buttonText]
+  [ div [style (textStyle ++ [color buttonColor])] [p.text]
+  , displayLink p buttonColor
   ]
 
 
@@ -64,9 +74,12 @@ view : Direction -> Project -> Html Msg
 view d p =  
   case d of 
     Right ->
-      div [style ([flexWrap "wrap"] ++ blockContainer)] [displayMedia p, displayText p]
+      div [style ([flexWrap "wrap", backgroundColor
+      (color_ (rgb 114 153 150)), color "white"] ++ blockContainer)] [displayMedia p,
+      displayText p "white"]
     Left ->
-      div [style ([flexWrap "wrap-reverse"] ++ blockContainer)] [displayText p, displayImage p]
+      div [style ([flexWrap "wrap-reverse"] ++ blockContainer)]
+      [displayText p (color_ (rgb 64 64 64)), displayMedia p]
     
 
 
@@ -89,7 +102,8 @@ blockContainer =
   , paddingLeft "1rem"
   , paddingRight "1rem"
   , margin "0"
-  , marginBottom "4rem"
+  , paddingBottom "4rem"
+  , paddingTop "4rem"
   , display "flex"
   , alignItems "flex-start"
   ]
@@ -110,8 +124,8 @@ projImg =
 
 buttonStyle : List Style
 buttonStyle = 
-  [ backgroundColor "white" 
-  , ("box-sizing", "border-box")
+  [  
+    ("box-sizing", "border-box")
   , border "none"
   , fontWeight "bold"
   , fontFamily "Montserrat"

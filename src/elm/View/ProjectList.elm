@@ -26,14 +26,15 @@ renderProjects p =
 
 view : Html Msg
 view = (renderProjects 
-  [ {imgPath = Freshcoast.image, text = Freshcoast.text,
-      buttonLink = "https://github.com/f95johansson/IceCreamBoats", buttonText = "View on Github"}
-  , {imgPath = Papahana.image, text = Papahana.text,
+  [ {imgPath = Papahana.image, text = Papahana.text,
       buttonLink = "https://github.com/MarcCoquand/papahana", buttonText = "View on Github"}
+  , {imgPath = Freshcoast.image, text = Freshcoast.text,
+      buttonLink = "https://github.com/f95johansson/IceCreamBoats", buttonText = "View on Github"}
   , {imgPath = Courses.image, text = Courses.text,
       buttonLink = "https://github.com/Isakdl/IDportal", buttonText = "View on Github"}
   , {imgPath = Smartcity.image, text = Smartcity.text,
       buttonLink = "", buttonText = ""}
+      
   ])
 
 -- CSS
