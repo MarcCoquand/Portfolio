@@ -16449,6 +16449,53 @@ var _marccoquand$portfolio$View_ProjectList$container = {
 		}
 	}
 };
+var _marccoquand$portfolio$View_ProjectList$headerText = {
+	ctor: '::',
+	_0: _seanhess$elm_style$Style$fontFamily('Montserrat'),
+	_1: {
+		ctor: '::',
+		_0: _seanhess$elm_style$Style$letterSpacing('0.2rem'),
+		_1: {
+			ctor: '::',
+			_0: _seanhess$elm_style$Style$color('white'),
+			_1: {
+				ctor: '::',
+				_0: _seanhess$elm_style$Style$maxWidth('50rem'),
+				_1: {
+					ctor: '::',
+					_0: _seanhess$elm_style$Style$lineHeight('130%'),
+					_1: {
+						ctor: '::',
+						_0: _seanhess$elm_style$Style$color(
+							_seanhess$elm_style$Style$color_(
+								A3(_elm_lang$core$Color$rgb, 64, 64, 64))),
+						_1: {
+							ctor: '::',
+							_0: _seanhess$elm_style$Style$justifyContent('center'),
+							_1: {
+								ctor: '::',
+								_0: _seanhess$elm_style$Style$display('flex'),
+								_1: {
+									ctor: '::',
+									_0: _seanhess$elm_style$Style$textAlign(_seanhess$elm_style$Style$center),
+									_1: {
+										ctor: '::',
+										_0: _seanhess$elm_style$Style$margin(_seanhess$elm_style$Style$auto),
+										_1: {
+											ctor: '::',
+											_0: _seanhess$elm_style$Style$marginBottom('4rem'),
+											_1: {ctor: '[]'}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+};
 var _marccoquand$portfolio$View_ProjectList$renderProject = F2(
 	function (i, p) {
 		return _elm_lang$core$Native_Utils.eq(
@@ -16458,29 +16505,51 @@ var _marccoquand$portfolio$View_ProjectList$renderProject = F2(
 var _marccoquand$portfolio$View_ProjectList$renderProjects = function (p) {
 	return A2(
 		_elm_lang$html$Html$div,
-		{
-			ctor: '::',
-			_0: _elm_lang$html$Html_Attributes$style(_marccoquand$portfolio$View_ProjectList$container),
-			_1: {ctor: '[]'}
-		},
+		{ctor: '[]'},
 		A2(_elm_lang$core$List$indexedMap, _marccoquand$portfolio$View_ProjectList$renderProject, p));
 };
-var _marccoquand$portfolio$View_ProjectList$view = _marccoquand$portfolio$View_ProjectList$renderProjects(
+var _marccoquand$portfolio$View_ProjectList$view = A2(
+	_elm_lang$html$Html$div,
 	{
 		ctor: '::',
-		_0: {imgPath: _marccoquand$portfolio$Text_Papahana$image, text: _marccoquand$portfolio$Text_Papahana$text, buttonLink: 'https://github.com/MarcCoquand/papahana', buttonText: 'View on Github'},
+		_0: _elm_lang$html$Html_Attributes$style(_marccoquand$portfolio$View_ProjectList$container),
+		_1: {ctor: '[]'}
+	},
+	{
+		ctor: '::',
+		_0: A2(
+			_elm_lang$html$Html$h2,
+			{
+				ctor: '::',
+				_0: _elm_lang$html$Html_Attributes$style(_marccoquand$portfolio$View_ProjectList$headerText),
+				_1: {ctor: '[]'}
+			},
+			{
+				ctor: '::',
+				_0: _elm_lang$html$Html$text('Projects I\'ve worked on'),
+				_1: {ctor: '[]'}
+			}),
 		_1: {
 			ctor: '::',
-			_0: {imgPath: _marccoquand$portfolio$Text_Freshcoast$image, text: _marccoquand$portfolio$Text_Freshcoast$text, buttonLink: 'https://github.com/f95johansson/IceCreamBoats', buttonText: 'View on Github'},
-			_1: {
-				ctor: '::',
-				_0: {imgPath: _marccoquand$portfolio$Text_Courses$image, text: _marccoquand$portfolio$Text_Courses$text, buttonLink: 'https://github.com/Isakdl/IDportal', buttonText: 'View on Github'},
-				_1: {
+			_0: _marccoquand$portfolio$View_ProjectList$renderProjects(
+				{
 					ctor: '::',
-					_0: {imgPath: _marccoquand$portfolio$Text_Smartcity$image, text: _marccoquand$portfolio$Text_Smartcity$text, buttonLink: '', buttonText: ''},
-					_1: {ctor: '[]'}
-				}
-			}
+					_0: {imgPath: _marccoquand$portfolio$Text_Papahana$image, text: _marccoquand$portfolio$Text_Papahana$text, buttonLink: 'https://github.com/MarcCoquand/papahana', buttonText: 'View on Github'},
+					_1: {
+						ctor: '::',
+						_0: {imgPath: _marccoquand$portfolio$Text_Freshcoast$image, text: _marccoquand$portfolio$Text_Freshcoast$text, buttonLink: 'https://github.com/f95johansson/IceCreamBoats', buttonText: 'View on Github'},
+						_1: {
+							ctor: '::',
+							_0: {imgPath: _marccoquand$portfolio$Text_Courses$image, text: _marccoquand$portfolio$Text_Courses$text, buttonLink: 'https://github.com/Isakdl/IDportal', buttonText: 'View on Github'},
+							_1: {
+								ctor: '::',
+								_0: {imgPath: _marccoquand$portfolio$Text_Smartcity$image, text: _marccoquand$portfolio$Text_Smartcity$text, buttonLink: '', buttonText: ''},
+								_1: {ctor: '[]'}
+							}
+						}
+					}
+				}),
+			_1: {ctor: '[]'}
 		}
 	});
 var _marccoquand$portfolio$View_Footer$buttonStyle = {
